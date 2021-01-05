@@ -17,3 +17,5 @@ Using the test data as validation data (i.e. 10K samples) the validation accurac
 I think it is possible to calculate an average of the attentional update over a mini-batch. 
 
 NB with attention span == 0 the code does not work. Why? Shouldn't it be the same as a normal weight update?
+
+Found maybe something: why when doing the backward pass the feedback signal from a layer to another is not simply (weight * derivative) but (new_weight * derivative) with new_weight = layer_input * attention / activation ??? (activation being sum(w * input)+b)
