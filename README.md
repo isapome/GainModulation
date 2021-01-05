@@ -15,3 +15,5 @@ It seems like using only 1K samples out of 60K for validation might be not signi
 Using the test data as validation data (i.e. 10K samples) the validation accuracy goes on par with the training accuracy. It never reaches 98.5%.
 
 I think it is possible to calculate an average of the attentional update over a mini-batch. 
+
+NB with attention span == 0 the code does not work. Why? Shouldn't it be the same as a normal weight update?
