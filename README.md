@@ -18,4 +18,4 @@ I think it is possible to calculate an average of the attentional update over a 
 
 NB with attention span == 0 the code does not work. Why? Shouldn't it be the same as a normal weight update?
 
-Found maybe something: why when doing the backward pass the feedback signal from a layer to another is not simply (weight * derivative) but (new_weight * derivative) with new_weight = layer_input * attention / activation ??? (activation being sum(w * input)+b)
+Found maybe something: why when doing the backward pass the feedback signal from a layer to another is not simply (weight * derivative) but (new_weight * derivative) with new_weight = layer_input * attention / activation ??? (activation being sum(w * input)+b). I have changed it to ffweights and it gives the same results as before. Maybe with deeper networks the effects would be more evident?
