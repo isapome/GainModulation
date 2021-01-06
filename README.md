@@ -24,3 +24,7 @@ Found maybe something: why when doing the backward pass the feedback signal from
 ### Jan 5, 2020
 
 The attentional gain can be a [batch_size, neurons] matrix instead of a [neurons] vector. This way, it might be possible to do mini batches learning. However, we might need to check how the weight update is done, since it is still not working properly.
+
+Also, to be modified: currently the code accepts only softmax as activation for the output layer (i.e. you set identity manually and the net will do by default softmax)
+
+
