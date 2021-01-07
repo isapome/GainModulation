@@ -27,4 +27,7 @@ The attentional gain can be a [batch_size, neurons] matrix instead of a [neurons
 
 Also, to be modified: currently the code accepts only softmax as activation for the output layer (i.e. you set identity manually and the net will do by default softmax)
 
+### Jan 7, 2020
+
+Check what is the delta (i.e. the feedback at the level of the output layer) when initiating the weight update. From here it look like it is still the same delta as before, while it should be the RPE
 
