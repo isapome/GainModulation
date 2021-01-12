@@ -31,3 +31,8 @@ Also, to be modified: currently the code accepts only softmax as activation for 
 
 Check what is the delta (i.e. the feedback at the level of the output layer) when initiating the weight update. From here it look like it is still the same delta as before, while it should be the RPE
 
+
+### Jan 12, 2020
+
+Written new code with batch size, attention = 0 branch and modified weight update (both attentional and RPE-based). 
+
